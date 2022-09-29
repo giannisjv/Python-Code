@@ -1,8 +1,5 @@
-def IsEqual(x, y):
-    if(x == y):
-        return True
-    else:
-        return False
-
+from functions import *
 
 print(IsEqual(5,6))
+
+print(add(5,5))

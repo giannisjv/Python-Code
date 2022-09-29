@@ -27,4 +27,6 @@ for i in vath:
   max = i
   thesi = vath[i]
  
-  
+from pythagoreio import *
+ 
+print(My_pow(10)) 

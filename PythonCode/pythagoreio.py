@@ -1,3 +1,4 @@
+#pythagoreio.py>
 def My_pow(a):
    return a ** 2
 
