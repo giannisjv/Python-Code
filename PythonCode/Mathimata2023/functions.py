@@ -4,3 +4,7 @@ def IsEqual(x, y):
     else:
         return False
 
+def add(x, y):
+    return x + y
+
+    
