@@ -26,4 +26,8 @@ x = IsGreatOrless(6,6)
 print(x)
 print(type(x))
 
-    
+def dym2(a):
+  x = 1
+  for i in range(a):
+      x *= 2 
+      print(x)
