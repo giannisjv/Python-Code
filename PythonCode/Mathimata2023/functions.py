@@ -21,7 +21,7 @@ def IsGreatOrless(x, y):
       elif(IsEqual(x, y) == True):
         return "x and y are equal"
 
-def dym2(a):
+def pow2(a):
   x = 1
   for i in range(a):
       x *= 2 
