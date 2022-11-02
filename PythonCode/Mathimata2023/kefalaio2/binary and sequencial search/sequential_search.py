@@ -4,7 +4,7 @@ import random
 import timeit
 
 start = 1 
-end = 100
+end = 10000
 step = 1
 numForSearch = random.randint(start,end)
 moves_counter = 0
