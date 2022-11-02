@@ -21,14 +21,12 @@ while(flag == False):
 
     if(numForSearch < binaryNum):
         maxNum = binaryNum - 1
-        print("minNum " ,minNum , " maxNum ", maxNum)
 
     elif(numForSearch > binaryNum):
         minNum = binaryNum + 1
-        print("minNum " ,minNum , " maxNum ", maxNum)
    
     elif(numForSearch == binaryNum):
-        print("The number was ", numForSearch , "and was found in " , moves_counter , "tri  es")
+        print("The number was ", numForSearch , "and was found in " , moves_counter , "tries")
         print("The range was between " , start , "to ", end)
         flag = True
 
