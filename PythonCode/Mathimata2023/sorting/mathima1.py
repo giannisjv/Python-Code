@@ -1,3 +1,5 @@
+
+
 import random
 
 import sys
@@ -9,15 +11,18 @@ print(students)
 students = bubble_sort(students)
 print(students)
 
-mylist = list()
+mylist = [5,4,3,2,1]
 
-for i in range(15):
+"""
+for i in range(5):
     a = random.randint(1, 50)
     mylist.append(a)  
-
+"""
 print(mylist)
 my_list_sorthed = bubble_sort(mylist)
 print(my_list_sorthed)
+
+
 
 
 

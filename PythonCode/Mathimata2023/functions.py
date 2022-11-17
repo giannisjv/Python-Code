@@ -29,8 +29,8 @@ def pow2(a):
 
 def bubble_sort(array):
     N = len(array)
-    for i in range (N):
-        for j in range(N - 1, 0, -1):
+    for i in range(N-1):
+        for j in range(N-1,i,-1):
             if (array[j] < array[j-1]):
                 temp = array[j]
                 array[j] = array[j-1]
