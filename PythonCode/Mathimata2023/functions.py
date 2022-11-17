@@ -26,3 +26,13 @@ def pow2(a):
   for i in range(a):
       x *= 2 
       print(x)
+
+def bubble_sort(array):
+    N = len(array)
+    for i in range (N):
+        for j in range(N - 1, 0, -1):
+            if (array[j] < array[j-1]):
+                temp = array[j]
+                array[j] = array[j-1]
+                array[j-1] = temp
+    return array
