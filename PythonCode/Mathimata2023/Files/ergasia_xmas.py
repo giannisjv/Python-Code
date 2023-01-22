@@ -5,11 +5,7 @@ def IsExisting(path):
 
 anwser = "a"
 while(anwser != "exit"):
-<<<<<<< HEAD
     anwser = input("\n1. Δημιουργία αρχείου\n2. Άνοιγμα αρχείου (Read-only)\n3. Προσθήκη στο αρχείο\n4. Εμφάνιση μόνο των βαθμών\nexit για τέλος: ")
-=======
-    anwser = input("\n1. Δημιουργία αρχείου\n2. Άνοιγμα αρχείου (Read-only)\n3. Προσθήκη στο αρχείο\nexit για τέλος: ")
->>>>>>> ce222a62b89fb89bca3bd7ad5d760a8402b7463d
     if (anwser == "1"):
         file_name = input("Δώσε το Όνομα του μαθητή: ")
         path = input("Πού θα ανοιχθεί το αρχείο; ")
@@ -46,11 +42,7 @@ while(anwser != "exit"):
         file = file_name + ".txt"
         file_name1 = path + "/" + file
         
-<<<<<<< HEAD
         fileObj = open(file_name1,"r")
-=======
-        fileObj = open(file_name1.txt,"r")
->>>>>>> ce222a62b89fb89bca3bd7ad5d760a8402b7463d
         print(fileObj.read())
         fileObj.close()
 
@@ -87,7 +79,6 @@ while(anwser != "exit"):
                 fileObj.write(mathima + "\t" + str(Vathmos) + "\n")
                 insert = input("θέλεις να δώσεις και άλλο μάθημα; yes | no")
             fileObj.close()
-<<<<<<< HEAD
         
     elif(anwser == "4"):
             """
@@ -118,8 +109,6 @@ while(anwser != "exit"):
         print("Goodbye")
     else:
         print("Wrong anwser you little redneck")
-=======
 
-        else:
+else:
             print("Wrong anwser you little redneck")
->>>>>>> ce222a62b89fb89bca3bd7ad5d760a8402b7463d
