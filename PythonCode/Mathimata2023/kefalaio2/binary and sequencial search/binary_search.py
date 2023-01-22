@@ -14,6 +14,7 @@ maxNum = end
 
 
 start_time = timeit.default_timer() 
+
 while(flag == False):
     moves_counter += 1
     binaryNum = (minNum + maxNum) / 2
