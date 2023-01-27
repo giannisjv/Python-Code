@@ -112,3 +112,4 @@ while(anwser != "exit"):
 
 else:
             print("Wrong anwser you little redneck")
+
