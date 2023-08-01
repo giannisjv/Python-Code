@@ -31,5 +31,8 @@ print("\n\n", bus_1)
 print(bus_1.seating_capacity())
 
 x = limo("Mercedes", 180, 35660)
+xy = Bus("Volvo",120,15689656)
 Car.printname(school_Bus)
 x.printname()
+
+print(xy.seating_capacity())
