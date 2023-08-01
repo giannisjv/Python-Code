@@ -12,5 +12,6 @@ class  mileage(car):
         super().__init__(brand, model, year_of_production)
         self.service = service
 
-Car1 = mileage("Reault", "Megane", 2004, 245568)
+Car1 = mileage("Reault", "Megane", 2004)
+Car1.service = 2444639
 print(Car1)
