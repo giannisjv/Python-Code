@@ -29,6 +29,7 @@ class circleArea(calculator):
 class power(calculator):
     def __init__(self, a, b):
         super().__init__(a, b)
+    
     def mypow(self):
         myNum = calculator(self.a, self.b)
         powe = 1

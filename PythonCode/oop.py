@@ -1,38 +1,60 @@
-class Car:
-    def __init__(self, name, max_speed, mileage):
+class Vehicle:
+    color = "white"
+    def __init__(self,name, max_speed, mileage, capacity, doors):
         self.name = name
         self.max_speed = max_speed
         self.mileage = mileage
-    
+        self.capacity = capacity
+        self.doors = doors
+
     def seating_capacity(self, capacity):
-        return f"The seating capacity of a {self.name} is {capacity}"
-
-    def __str__(self):
-        return f"name {self.name}\nmax_speed{self.max_speed}\nmileage{self.mileage}"
+        return f"The Capacity of a {self.name} is {capacity} passengers"
     
-    def printname(self):
-        print(self.name)
+    def fare(self):
+        amount = self.capacity * 100
+        amount += amount *10 / 100
+        return amount
+    
+    def doorNum(self):
+        return f"Your {self.name} has {self.doors}"
 
-class Bus(Car):
-    def seating_capacity(self, capacity = 50):
-        return super().seating_capacity(capacity = 50)
+class MyCar:
+    pass 
 
-class limo(Car):
-    pass
+class Bus(Vehicle):
+    def __init__(self, name, max_speed, mileage, capacity, doors):
+        super().__init__(name, max_speed, mileage, capacity, doors)
+    
+    def seating_capacity(self):
+        return super().seating_capacity(self.capacity)
 
-ModelX = Car("ModelX", 320, 25520)
-print(f"max speed {ModelX.max_speed}\nmileage({ModelX.mileage})")
-print("\n")
-school_Bus = Bus("School Volvo", 180, 2522220)
-print(school_Bus)
+    def fare(self):
+        return super().fare()
+    
+    def doorNum(self):
+        return super().doorNum()
 
-bus_1 = Bus("road", 120, 35695123)
-print("\n\n", bus_1)
-print(bus_1.seating_capacity())
+class SUV(Vehicle):
+    def __init__(self, name, max_speed, mileage, capacity, doors):
+        super().__init__(name, max_speed, mileage, capacity, doors)
+    
+    def doorNum(self):
+        return super().doorNum()
 
-x = limo("Mercedes", 180, 35660)
-xy = Bus("Volvo",120,15689656)
-Car.printname(school_Bus)
-x.printname()
 
-print(xy.seating_capacity())
+Corsa = Vehicle("Corsa", 150, 255220, 4, 5)
+print(Corsa.color, Corsa.name, Corsa.max_speed, Corsa.mileage)
+
+Volvo = Bus("Volvo", 150, 365522, 45, 2)
+RAV4 = SUV("Volvo", 180, 365862, 5, 3)
+print(Volvo.color,"Vehicle Name ", Volvo.name, " Max Speed ", Volvo.max_speed, " Mileage ", Volvo.mileage)
+print(Volvo.seating_capacity())
+print("Total Bus Fare is: ",Volvo.fare())
+print(f"Total fare of {Corsa.name} is {Corsa.fare()}")
+print(Volvo.doorNum())
+print(Corsa.doorNum())
+print(RAV4.doorNum())
+print(type(RAV4))
+print(type(Corsa))
+print(isinstance(RAV4, Vehicle))
+
