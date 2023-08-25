@@ -31,4 +31,27 @@ class BinarySearchTree:
     
     def search(self, value):
         return self._search_recursive(self.root, value)
+    def _search_recursive(self, node, value):
+        if node is None or node.value == value:
+            return node
+        if value < node.value:
+            return self._search_recursive(node.left, value)
+        else:
+            return self._search_recursive(node.right, value)
+        
+
+bst = BinarySearchTree()
+
+bst.insert(5)
+bst.insert(3)
+bst.insert(7)
+bst.insert(2)
+bst.insert(4)
+bst.insert(6)
+bst.insert(8)
+
+print("Searching for elements: ")
+print(bst.search(4))
+print(bst.search(9))
+print(bst.search(2))
     
