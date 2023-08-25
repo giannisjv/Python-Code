@@ -29,8 +29,9 @@ class BinarySearchTree:
             else:
                 self._insert_recursive(node.right, value)
     
-    def search(self, value):
+    def search(self, value) -> int:
         return self._search_recursive(self.root, value)
+    
     def _search_recursive(self, node, value):
         if node is None or node.value == value:
             return node
@@ -54,4 +55,3 @@ print("Searching for elements: ")
 print(bst.search(4))
 print(bst.search(9))
 print(bst.search(2))
-    
