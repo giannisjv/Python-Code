@@ -4,9 +4,10 @@ import random
 import timeit
 
 start = 1 
-end = 10000
+end = 100000
 step = 1
-numForSearch = random.randint(start,end)
+#numForSearch = random.randint(start,end)
+numForSearch = 89000
 moves_counter = 0
 flag = False
 minNum = start
