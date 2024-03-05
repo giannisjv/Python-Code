@@ -4,21 +4,22 @@ import random
 import timeit
 
 start = 1 
-end = 10000
-step = 1
-numForSearch = random.randint(start,end)
+end = 100000
+#numForSearch = random.randint(start,end)
+numForSearch = 89000
 moves_counter = 0
 flag = False
+i=0
 
 start_time = timeit.default_timer() 
-for i in range(start, end, step):
+while(start <= end and not flag):
     moves_counter += 1
     if(numForSearch == i):
         print("The number was ", numForSearch , "and was found in " , moves_counter)
         print("The range was between " , start , "to ", end)
         flag = True
-        if(flag == True):
-            break
+    else:
+        i += 1
 end_time = timeit.default_timer()
 
 execution_time = end_time - start_time
